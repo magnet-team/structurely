@@ -1,0 +1,36 @@
+{
+  "id": "5c09a4416241ea2c293275b8",
+  "settings": {
+      "holmesName": "Aisa",
+      "timeZone": "America/Chicago"
+  },
+  "slots": [
+      {
+          "name": "name",
+          "value": "John Doe"
+      },
+      {
+          "name": "email",
+          "value": "jdoe@example.com"
+      },
+      {
+          "name": "phone",
+          "value": "+15551234567"
+      },
+      {
+          "name": "address",
+          "value": "123 Main St."
+      },
+      {
+          "name": "agent_name",
+          "value": "Andi Agent"
+      },
+      {
+          "name": "lead_types",
+          "value": [
+              "buyer"
+          ]
+      }
+  ],
+  "muted": false
+}
