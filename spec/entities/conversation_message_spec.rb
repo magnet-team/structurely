@@ -8,8 +8,9 @@ RSpec.describe Structurely::Entities::ConversationMessage do
     it { expect(message.text).to eq("foo") }
   end
 
-  describe "#value" do
+  describe "#received" do
     it { expect(message.received).to eq(now) }
+    it { expect(message.received.class).to eq(DateTime) }
   end
 
   describe "#_metadata" do
