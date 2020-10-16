@@ -16,6 +16,5 @@ require "structurely/entities/conversation_slot"
 require "structurely/conversation"
 
 module Structurely
-  # class Error < StandardError; end
-  # Your code goes here...
+  class Error < StandardError; end
 end
