@@ -1,4 +1,10 @@
 require "bundler/setup"
+
+begin
+  require "pry"
+rescue LoadError
+end
+
 require "structurely"
 
 RSpec.configure do |config|
