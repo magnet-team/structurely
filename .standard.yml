@@ -1,0 +1,4 @@
+# Documentation: https://github.com/testdouble/standard#what-you-might-do-if-youre-clever
+
+parallel: true
+format: progress
