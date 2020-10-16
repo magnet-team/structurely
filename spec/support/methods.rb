@@ -1,4 +1,9 @@
+# let(:fixture_file) { File.read("./spec/fixtures/single_series.json") }
+
 def load_json(name)
-  file_path = File.join(File.dirname(__FILE__), "fixtures/#{name}.json")
-  JSON.parse(File.read(file_path))
+  JSON.parse(file_fixture(name))
+end
+
+def file_fixture(file_name)
+  File.open("#{File.dirname(__FILE__)}/fixtures/#{file_name}.json").read
 end

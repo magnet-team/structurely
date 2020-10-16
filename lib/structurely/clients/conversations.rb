@@ -3,19 +3,22 @@ module Structurely
     class Conversations < ApiStruct::Client
       structurely_api :conversations
 
+      # Calls GET /conversations/:id
+      #
+      # @example
+      #   Structurely::Clients::Conversations.new.show('test-conversation-id')
+      # @see https://docs.structurely.com/#conversations-get-conversation
       def show(id)
         get(id)
       end
 
-      def create(settings:, slots:, muted:, messages:)
-        post(
-          body: {
-            settings: settings,
-            slots: slots,
-            muted: muted,
-            messages: messages
-          }.to_json
-        )
+      # Calls POST /conversations
+      #
+      # @example
+      #   Structurely::Clients::Conversations.new.create(**options)
+      # @see https://docs.structurely.com/#conversations-create-conversation
+      def create(options)
+        post(json: options)
       end
     end
   end
