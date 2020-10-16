@@ -18,14 +18,9 @@
     {
       "name": "email",
       "value": "jdoe@example.com"
-    },
-    {
-      "name": "name",
-      "value": "John"
     }
   ],
   "stages": [
-    "responded",
-    "interested"
+    "responded"
   ]
 }
