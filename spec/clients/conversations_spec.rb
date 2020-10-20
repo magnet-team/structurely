@@ -4,7 +4,7 @@ RSpec.describe Structurely::Clients::Conversations do
   describe "#headers" do
     specify { expect(subject.headers[:"Content-Type"]).to eq("application/json") }
     specify { expect(subject.headers[:"X-Api-Authorization"]).to eq("test") }
-    specify { expect(subject.api_root).to eq("https://api.staging.structurely.com/v1") }
+    specify { expect(subject.api_root).to eq("https://api.test.structurely.com/v1") }
   end
 
   describe "#show" do

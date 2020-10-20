@@ -1,3 +1,6 @@
+ENV["STRUCTURELY_API_KEY"] = "test"
+ENV["STRUCTURELY_API_ENDPOINT"] = "https://api.test.structurely.com/v1"
+
 require "bundler/setup"
 
 begin
