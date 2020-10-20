@@ -24,7 +24,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```rb
+Structurely::Settings.configure do |config|
+  config.api_key = 'your_api_key'
+  config.api_endpoint = 'https://api.structurely.com/v1'
+end
+```
 
 ## Development
 

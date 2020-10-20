@@ -1,0 +1,31 @@
+{
+  "id": "5f89abd220c8880031b975cc",
+  "muted": true,
+  "settings": {
+    "allowedDomains": [
+      "real_estate"
+    ],
+    "dripCampaignEnabled": false,
+    "holmesName": "Aisa",
+    "leadTypes": [
+      "buyer",
+      "seller"
+    ],
+    "reDripsEnabled": false,
+    "timeZone": "America/Chicago"
+  },
+  "slots": [
+    {
+      "name": "email",
+      "value": "jdoe@example.com"
+    },
+    {
+      "name": "name",
+      "value": "John"
+    }
+  ],
+  "stages": [
+    "responded",
+    "interested"
+  ]
+}

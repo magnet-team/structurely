@@ -32,6 +32,3 @@ jobs:
           bundle install --jobs 4 --retry 3
       - name: Run Rspec
         run: bin/rspec
-        env:
-          STRUCTURELY_API_KEY: test
-          STRUCTURELY_API_ENDPOINT: https://api.structurely.test/v1
