@@ -170,6 +170,16 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`.
 
+### Guard
+
+Guard provides a nice development experience by automatically running tests for you.
+
+To start, run the following command in your terminal:
+
+```sh
+bin/guard
+```
+
 ### Code Style
 
 Ruby linting and formatting is handled via [standard](https://github.com/testdouble/standard).
