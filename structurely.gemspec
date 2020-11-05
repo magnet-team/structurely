@@ -5,8 +5,8 @@ require "structurely/version"
 Gem::Specification.new do |spec|
   spec.name = "structurely"
   spec.version = Structurely::VERSION
-  spec.authors = ["Andrew Mason"]
-  spec.email = ["andrewmcodes@protonmail.com"]
+  spec.authors = ["Conor Odell", "Andrew Mason"]
+  spec.email = ["conorao@gmail.com", "andrewmcodes@protonmail.com"]
 
   spec.summary = "Client for accessing Structurely's API"
   spec.homepage = "https://github.com/magnet-team/structurely"
