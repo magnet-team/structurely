@@ -66,9 +66,6 @@ GEM
     http-form_data (2.3.0)
     http-parser (1.2.1)
       ffi-compiler (>= 1.0, < 2.0)
-    httplog (1.4.3)
-      rack (>= 1.0)
-      rainbow (>= 2.0.0)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -85,7 +82,6 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.6)
-    rack (2.2.3)
     rainbow (3.0.0)
     rake (13.0.1)
     rb-fsevent (0.10.4)
@@ -142,7 +138,6 @@ DEPENDENCIES
   bundler (>= 1.5)
   guard
   guard-rspec
-  httplog
   pry
   rake
   rspec (~> 3.0)
