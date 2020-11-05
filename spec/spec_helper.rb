@@ -16,6 +16,13 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].sort.each { |f| require f }
 WebMock.disable_net_connect!
 
 RSpec.configure do |config|
+  config.before(:suite) do
+    Structurely.configure do |config|
+      config.endpoint = ENV["STRUCTURELY_API_ENDPOINT"]
+      config.key = ENV["STRUCTURELY_API_KEY"]
+    end
+  end
+
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end

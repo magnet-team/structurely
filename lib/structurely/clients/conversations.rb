@@ -1,6 +1,6 @@
 module Structurely
   module Clients
-    class Conversations < ApiStruct::Client
+    class Conversations < BaseClient
       structurely_api :conversations
 
       # Calls GET /conversations/:id

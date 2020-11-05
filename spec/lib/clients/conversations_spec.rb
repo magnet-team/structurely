@@ -1,10 +1,14 @@
+require "spec_helper"
+
 RSpec.describe Structurely::Clients::Conversations do
   subject { described_class.new }
 
   describe "#headers" do
     specify { expect(subject.headers[:"Content-Type"]).to eq("application/json") }
     specify { expect(subject.headers[:"X-Api-Authorization"]).to eq("test") }
-    specify { expect(subject.api_root).to eq("https://api.test.structurely.com/v1") }
+    specify do
+      expect(subject.api_root).to eq("https://api.test.structurely.com/v1")
+    end
   end
 
   describe "#show" do

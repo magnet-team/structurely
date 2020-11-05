@@ -4,6 +4,7 @@ gemspec
 
 group :development, :test do
   gem "pry"
+  # gem "httplog"
 end
 
 group :development do
