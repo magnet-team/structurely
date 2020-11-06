@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: Bug Report
 about: Create a report to help us fix a problem. Do not use this to report API changes.
 labels: 'bug :beetle:'
 ---
