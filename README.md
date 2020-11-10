@@ -24,6 +24,9 @@ This gem lets you interface with the Structurely V1 API.
     - [Lint](#lint)
     - [Format](#format)
 - [Releasing](#releasing)
+- [Helpful Links](#helpful-links)
+  - [Gems](#gems)
+  - [Blog Posts](#blog-post)
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
@@ -199,6 +202,20 @@ bin/format
 ## Releasing
 
 To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+## Helpful Links
+
+Some resources for using [api_structs](https://github.com/rubygarage/api_struct).
+
+### Gems
+
+- [uploadcare-ruby-next](https://github.com/uploadcare/uploadcare-ruby-next)
+- [yandex_kassa](https://github.com/sigra/yandex_kassa)
+- [iubenda_api](https://github.com/raihan2006i/iubenda_api)
+
+### Blog Posts
+
+- [ApiStruct – A Library for Building API Wrappers in Ruby](https://rubygarage.org/blog/gem-for-api-wrapping)
 
 ## Code of Conduct
 
