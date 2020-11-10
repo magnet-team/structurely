@@ -110,23 +110,21 @@ Sample output:
 ```ruby
 Structurely::Conversation.create(
   muted: false,
-  settings: Structurely::Entities::ConversationSettings.new(
-    time_zone: "America/Chicago"
-  ),
+  settings: Structurely::Entity::ConversationSettings.new(time_zone: "America/Chicago")
   slots: [
-    Structurely::Entities::ConversationSlot.new(
+    Structurely::Entity::ConversationSlot.new(
       name: "email",
       value: "jdoe@example.com"
     )
   ],
   messages: [
-    Structurely::Entities::ConversationItem.new(
-      response: Structurely::Entities::ConversationMessage.new(
+    Structurely::Entity::ConversationItem.new(
+      response: Structurely::Entity::ConversationMessage.new(
         text: "Hello, what is your name?",
         received: "2018-12-08T15:20:00.000Z"
       ),
       context: "expect_name",
-      message: Structurely::Entities::ConversationMessage.new(
+      message: Structurely::Entity::ConversationMessage.new(
         text: "John",
         received: "2018-12-08T16:34:00.000Z"
       )

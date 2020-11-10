@@ -1,5 +1,3 @@
-# let(:fixture_file) { File.read("./spec/fixtures/single_series.json") }
-
 def load_json(name)
   JSON.parse(file_fixture(name))
 end

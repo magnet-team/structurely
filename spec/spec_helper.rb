@@ -1,21 +1,25 @@
-ENV["STRUCTURELY_API_KEY"] = "test"
-ENV["STRUCTURELY_API_ENDPOINT"] = "https://api.test.structurely.com/v1"
-
-require "bundler/setup"
-
 begin
+  require "bundler/setup"
+  require "dotenv/load"
   require "pry"
+  require "webmock/rspec"
 rescue LoadError
 end
 
+require "dry/configurable/test_interface"
 require "structurely"
-require "webmock/rspec"
+
+module Structurely
+  enable_test_interface
+end
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].sort.each { |f| require f }
 
 WebMock.disable_net_connect!
 
 RSpec.configure do |config|
+  include Structurely::Exception
+
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
