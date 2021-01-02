@@ -1,6 +1,6 @@
 module Structurely
-  module Entities
-    class ConversationSlot < ApiStruct::Entity
+  module Entity
+    class ConversationSlot < Entity
       attr_entity :name, :value
     end
   end

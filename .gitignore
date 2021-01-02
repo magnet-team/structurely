@@ -13,3 +13,4 @@
 .covered.db
 
 .env
+spec/support/vcr_cassettes
