@@ -1,0 +1,3 @@
+tasks:
+  - init: bin/setup
+    command: bin/guard
