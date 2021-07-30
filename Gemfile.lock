@@ -126,6 +126,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.7)
     unicode-display_width (1.7.0)
+    vcr (6.0.0)
     webmock (3.9.3)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -143,7 +144,8 @@ DEPENDENCIES
   rspec (~> 3.0)
   standard
   structurely!
+  vcr (~> 6.0)
   webmock (~> 3.9)
 
 BUNDLED WITH
-   2.1.4
+   2.2.16

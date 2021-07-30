@@ -1,0 +1,13 @@
+{
+  "createdAt": "Fri, 30 Jul 2021 20:38:15 GMT",
+  "id": "61046337d3b4410036e4a5aa",
+  "name": "conversations",
+  "secret": "dxPBGPbmMclWVvni5wOufQiAEm6Wj4sJjFtkJwRyjIxVaihv",
+  "target": "https://fp-local.ngrok.io",
+  "triggers": [
+      "conversation:updated",
+      "response:created"
+  ],
+  "updatedAt": "Fri, 30 Jul 2021 20:38:15 GMT",
+  "version": "v1"
+}

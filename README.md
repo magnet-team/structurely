@@ -18,6 +18,12 @@ This gem lets you interface with the Structurely V1 API.
   - [Conversations](#conversations)
     - [Get Conversation](#get-conversation)
     - [Create Conversation](#create-conversation)
+  - [Conversation Webhooks](#conversation-webhooks)
+    - [List Conversation Webhooks](#list-conversation-webhooks)
+    - [Create Conversation Webhook](#create-conversation-webhook)
+    - [Get Conversation Webhooks](#get-conversation-webhook)
+    - [Update Conversation Webhooks](#update-conversation-webhook)
+    - [Delete Conversation Webhooks](#delete-conversation-webhook)
 - [Development](#development)
   - [Setup](#setup)
   - [Code Style](#code-style)
@@ -163,6 +169,121 @@ Sample output:
     "not_responded"
   ]
 }
+```
+
+
+### Conversation Webhooks
+
+#### List Conversation Webhooks
+
+[Structurely List Conversation Webhooks Documentation](https://docs.structurely.com/#conversation-webhooks-list-conversation-webhooks)
+
+```ruby
+Structurely::ConversationWebhook.index
+```
+
+Sample output:
+
+```ruby
+{
+  "_metadata" => {
+      "collection" => "conversationWebhooks",
+      "limit" => 10,
+      "offset" => 0,
+      "total" => 0
+  },
+  "conversationWebhooks" => []
+}
+```
+
+#### Create Conversation Webhook
+
+[Structurely Create Conversation Webhook Documentation](https://docs.structurely.com/#conversation-webhooks-create-conversation-webhook)
+
+```ruby
+Structurely::ConversationWebhook.create(
+  name: "conversations",
+  target: "https://fp-local.ngrok.io",
+  triggers: ["conversation:updated", "response:created"]
+)
+```
+
+Sample output:
+
+```ruby
+{
+  "created_at" => "Fri, 30 Jul 2021 20:19:42 GMT",
+  "id" => "61045ede0566800108895968",
+  "name" => "conversations",
+  "secret" => "SECRET",
+  "target" => "https://fp-local.ngrok.io",
+  "triggers" => ["conversation:updated", "response:created"],
+  "updated_at" => "Fri, 30 Jul 2021 20:19:42 GMT",
+  "version" => "v1"
+}
+```
+
+#### Get Conversation Webhook
+
+[Structurely Get Conversation Webhook Documentation](https://docs.structurely.com/#conversation-webhooks-get-conversation-webhook)
+
+```ruby
+Structurely::ConversationWebhook.show("61045ede0566800108895968")
+```
+
+Sample output:
+
+```ruby
+{
+  "created_at" => "Fri, 30 Jul 2021 20:19:42 GMT",
+  "id" => "61045ede0566800108895968",
+  "name" => "conversations",
+  "secret" => "SECRET",
+  "target" => "https://fp-local.ngrok.io",
+  "triggers" => ["conversation:updated", "response:created"],
+  "updated_at" => "Fri, 30 Jul 2021 20:19:42 GMT",
+  "version" => "v1"
+}
+```
+
+#### Update Conversation Webhook
+
+[Structurely Update Conversation Webhook Documentation](https://docs.structurely.com/#conversation-webhooks-update-conversation-webhook)
+
+```ruby
+Structurely::ConversationWebhook.update("61045ede0566800108895968", {
+  name: "my_conversations",
+  triggers: ["conversation:updated"]
+})
+```
+
+Sample output:
+
+```ruby
+{
+  "created_at" => "Fri, 30 Jul 2021 20:19:42 GMT",
+  "id" => "61045ede0566800108895968",
+  "name" => "my_conversations",
+  "secret" => "ynpKYihXaxBUfc16xHi8Dc7LZL7xYwajlPUnT3kgKCbKy3Ce",
+  "target" => "https://fp-local.ngrok.io",
+  "triggers" => ["conversation:updated"],
+  "updated_at" => "Fri, 30 Jul 2021 20:25:11 GMT",
+  "version" => "v1"
+}
+```
+
+#### Delete Conversation Webhook
+
+[Structurely Delete Conversation Webhook Documentation](https://docs.structurely.com/#conversation-webhooks-delete-conversation-webhook)
+
+```ruby
+Structurely::ConversationWebhook.delete("61045ede0566800108895968")
+```
+
+Sample output:
+
+```ruby
+Dry::Monads::Result::Success(nil)
 ```
 
 ## Development
